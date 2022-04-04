@@ -13,8 +13,6 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut canvas = window.into_canvas()
     .present_vsync()
     .build()?;
- 
-    canvas.present();
 
     let mut event_pump = sdl_context.event_pump()?;
     'running: loop {
